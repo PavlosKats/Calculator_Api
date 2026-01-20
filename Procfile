@@ -1,1 +1,1 @@
-web: dotnet ./CalculatorApi.dll
+web: dotnet ./calculatorApi.dll
