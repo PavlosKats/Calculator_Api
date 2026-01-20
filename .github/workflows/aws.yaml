@@ -30,7 +30,7 @@ jobs:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID}}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID}}
           application_name: Calculator API
-          environment_name: Calculator API-env
+          environment_name: CalculatorAPI-env
           version_label: ${{ github.run_id}}
           region: us-east-1
           deployment_package: site.zip
