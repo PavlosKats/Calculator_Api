@@ -1,1 +1,1 @@
-web: ./calculatorApi.dll
+web: ./CalculatorApi

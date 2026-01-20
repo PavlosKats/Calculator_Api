@@ -22,9 +22,12 @@ jobs:
         run: |
           dotnet restore
           dotnet publish -c Release -o site --self-contained true --runtime linux-x64
-      
+
+      - name: Set execute permissions on the app
+        run: chmod +x site/CalculatorApi
+
       - name:  Verify published files
-        run: ls -la site/
+        run: ls -la site/CalculatorApi*
 
       - name: create zip package
         run: cd site && zip -r ../site.zip .
