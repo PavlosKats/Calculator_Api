@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="Procfile" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+
 </Project>
