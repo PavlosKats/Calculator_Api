@@ -1,1 +1,1 @@
-web: ./CalculatorApi
+web: ./calculatorApi
