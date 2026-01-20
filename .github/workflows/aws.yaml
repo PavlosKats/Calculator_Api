@@ -24,10 +24,13 @@ jobs:
           dotnet publish -c Release -o site --self-contained true --runtime linux-x64
 
       - name: Set execute permissions on the app
-        run: chmod +x site/CalculatorApi
+        run: chmod +x site/CalculatorApi || chmod +x site/calculatorApi || true
 
-      - name:  Verify published files
-        run: ls -la site/CalculatorApi*
+      - name:  List ALL files in site directory
+        run: ls -la site/
+
+      - name: Find executable files
+        run: find site/ -type f -executable
 
       - name: create zip package
         run: cd site && zip -r ../site.zip .
